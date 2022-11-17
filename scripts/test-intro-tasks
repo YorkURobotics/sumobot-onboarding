@@ -1,0 +1,4 @@
+#!/bin/bash
+g++ programming/intro-tasks/tasks-test.cpp -o results
+./results
+rm results
