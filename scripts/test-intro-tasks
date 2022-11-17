@@ -1,4 +1,5 @@
 #!/bin/bash
-g++ programming/intro-tasks/tasks-test.cpp -o results
+git_root=$(git rev-parse --show-toplevel)
+g++ $git_root/programming/intro-tasks/tasks-test.cpp -o results
 ./results
 rm results
