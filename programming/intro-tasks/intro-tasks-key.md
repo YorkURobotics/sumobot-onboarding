@@ -4,13 +4,7 @@
 
 ```C++
 int sumDouble(int a, int b) {
-  sum = a + b;
-  if (a == b) {
-    return 2 * sum;
-  }
-  else {
-    return sum;
-  }
+  return a == b ? 2 * (a + b) : a + b;
 }
 ```
 
@@ -18,34 +12,16 @@ int sumDouble(int a, int b) {
 
 ```C++
 int diff21(int n) {
-  int diff;
-  
-  if (n > 21) {
-    diff = n - 21;
-    return diff * 2;
-  }
-  else {
-    diff = 21 - n;
-    return diff * 2;
-  }
+  return n > 21 ? n - 21 : 21 - n;
 }
 ```
 
 ### Task #3: parrotTrouble
 
 ```C++
-int parrotTrouble(talking, hour) {
-  if (talking == true) {
-    if (hour < 7 || hour > 20) {
-      return true;
-    }
-    else {
-      return false;
-     }
-  }
-  else {
-    return false;
-  }
+int parrotTrouble(bool talking, int hour) {
+  if (talking) return hour < 7 || hour > 20;
+  return false;
 }
 ```
 
@@ -53,35 +29,17 @@ int parrotTrouble(talking, hour) {
 
 ```C++
 int makes10(int a, int b) {
-  if (a == 10 || b == 10) {
-    return true;
-  }
-  else {
-    if (a + b == 10) {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
+  if (a == 10 || b == 10) return true;
+  return a + b == 10;
 }
 ```
 
 ### Task #5: nearHundred
 
 ```C++
-#include <cstdlib>
-
-int nearHundred(int n) {
-  if (abs(100 - n) <= 10) {
-    return true;
-  }
-  else if (abs(200 - n) <= 10) {
-    return true;
-  }
-  else {
-    return false;
-  }
+int nearHundred(int n) { // requires <cstdlib>
+  if (abs(100 - n) <= 10 || abs(200 - n) <= 10) return true;
+  return false;
 }
 ```
 
@@ -90,11 +48,9 @@ int nearHundred(int n) {
 ```C++
 int arrayCount9(int nums[], int size) {
   int counter = 0;
-  for (int i = 0; i < size; i++) {
-    if (nums[i] == 9) {
-      counter = counter + 1;
-    }
-  }
+  for (int i = 0; i < size; i++)
+    if (nums[i] == 9) counter++;
+  return counter;
 }
 ```
 
@@ -102,22 +58,10 @@ int arrayCount9(int nums[], int size) {
 
 ```C++
 int arrayFront9(int nums[], int size) {
-  if (length >= 4) {
-    for (int i = 0; i < 4; i++) {
-      if (nums[i] == 9) {
-        return true;
-      }
-    }
-    return false;
-  }
-  else {
-    for (int i = 0; i < size; i++) {
-      if (nums[i] == 9) {
-        return true;
-      }
-    }
-    return false;
-  }
+  size = size >= 4 ? 4 : size;
+  for (int i = 0; i < size; i++)
+    if (nums[i] == 9) return true;
+  return false;
 }
 ```
 
@@ -125,11 +69,9 @@ int arrayFront9(int nums[], int size) {
 
 ```C++
 int array123(int nums[], int size) {
-  for (int i = 0; i < size - 2; i++) {
-    if (nums[i] == 1 && nums[i + 1] == 2 && nums[i + 2] == 3) {
+  for (int i = 0; i < size - 2; i++)
+    if (nums[i] == 1 && nums[i + 1] == 2 && nums[i + 2] == 3)
       return true;
-    }
-  }
   return false;
 }
 ```
@@ -138,22 +80,8 @@ int array123(int nums[], int size) {
 
 ```C++
 bool squirrelPlay(int temp, bool isSummer) {
-  if (isSummer == true) {
-    if (temp >= 60 && temp <= 100 {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
-  else {
-    if (temp <= 60 && temp >= 90) {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
+  if (isSummer) return temp >= 60 && temp <= 100;
+  return temp >= 60 && temp <= 90;
 }
 ```
 
@@ -161,19 +89,9 @@ bool squirrelPlay(int temp, bool isSummer) {
 
 ```C++
 int caughtSpeeding(int speed, bool isBirthday) {
-  int bonus = 0;
-  if (isBirthday == true) {
-    bonus = 5;
-  }
-  
-  if (speed <= 60 + bonus) {
-    return 0;
-  }
-  else if (speed >= (61 + bonus) && speed <= (80 + bonus)) {
-    return 1;
-  }
-  else {
-    return 2;
-  }
+  int bonus = isBirthday ? 5 : 0;
+  if (speed <= 60 + bonus) return 0;
+  if (speed <= 80 + bonus) return 1;
+  return 2;
 }
 ```
