@@ -18,15 +18,15 @@ Introductory tutorials (highly recommended):
 
 Advanced tutorials (optional):
 
-- Tutorial 5: [Workplane, Ruler, Blocks and Bricks](https://www.youtube.com/watch?v=aa2uboMStVQ&t=476s)
-- Tutorial 6: [Circular Patterns and Slicing](https://www.youtube.com/watch?v=J_M8LGsElJs&t=271s)
+- Tutorial 4: [Workplane, Ruler, Blocks and Bricks](https://www.youtube.com/watch?v=aa2uboMStVQ&t=476s)
+- Tutorial 5: [Circular Patterns and Slicing](https://www.youtube.com/watch?v=J_M8LGsElJs&t=271s)
 
 ## Components
 
 The following includes the importable STL files for the electronic hardware of our sumobots:
 
 - [HC-SR04 ultrasonic sensor](/3d-modeling/components/HC-SR04_ultrasonic_sensor.stl)
-- [QTR-1A reflectance sensor (&times;2)](/3d-modeling/components/QTR-1A_reflectance_sensor.stl)
+- [QTR-1A reflectance sensor](/3d-modeling/components/QTR-1A_reflectance_sensor.stl)
 - [JSumo DC motor](/3d-modeling/components/JSumo-DC-motor.stl)
 - [L298N motor driver](/3d-modeling/components/L298N_motor_driver.stl)
-- [JS7444 wheel (&times;2)](/3d-modeling/components/JS7444_wheel.stl)
+- [JS7444 wheel](/3d-modeling/components/JS7444_wheel.stl)
