@@ -23,7 +23,7 @@ To make these little robots think, we need to give their microporcessors instruc
 - Programming
   - [Arduino](./programming/arduino-guide.md)
   - Hardware
+    - L298N motor driver ([repository](https://github.com/YorkURobotics/l298n-module-simple-lib) / [example](https://github.com/YorkURobotics/l298n-module-simple-lib/blob/main/examples/simple.ino))
     - HC-SR04 ultrasonic sensor ([repository](https://github.com/YorkURobotics/hcsr04-ultrasonic-sensor-lib) / [example](https://github.com/YorkURobotics/hcsr04-ultrasonic-sensor-lib/blob/master/examples/HCSR04/HCSR04.ino))
-    - QTR-1A reflectrance sensor ([repository](https://github.com/YorkURobotics/qtr-reflectance-sensor-lib) / [example](https://github.com/YorkURobotics/qtr-reflectance-sensor-lib/blob/master/examples/QTRARawValuesExample/QTRARawValuesExample.ino))
-    - L298N motor driver ([repository](https://github.com/YorkURobotics/l298n-motor-driver-lib) / [example](https://github.com/YorkURobotics/l298n-motor-driver-lib/blob/main/examples/simple.ino))
+    - QTR-1A reflectrance sensor ([repository](https://github.com/YorkURobotics/qtr1a-reflectance-sensor-lib))
   - [Git](./programming/git-guide.md) (optional)
